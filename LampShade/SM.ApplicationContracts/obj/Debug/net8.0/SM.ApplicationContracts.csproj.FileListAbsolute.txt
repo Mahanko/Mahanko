@@ -1,0 +1,16 @@
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\bin\Debug\net8.0\SM.ApplicationContracts.deps.json
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\bin\Debug\net8.0\SM.ApplicationContracts.dll
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\bin\Debug\net8.0\SM.ApplicationContracts.pdb
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\bin\Debug\net8.0\0-Framework.dll
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\bin\Debug\net8.0\0-Framework.pdb
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\SM.ApplicationContracts.csproj.AssemblyReference.cache
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\SM.ApplicationContracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\SM.ApplicationContracts.AssemblyInfoInputs.cache
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\SM.ApplicationContracts.AssemblyInfo.cs
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\SM.ApplicationContracts.csproj.CoreCompileInputs.cache
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\SM.ApplicationContracts.sourcelink.json
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\SM.Appli.A0A0B2CD.Up2Date
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\SM.ApplicationContracts.dll
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\refint\SM.ApplicationContracts.dll
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\SM.ApplicationContracts.pdb
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.ApplicationContracts\obj\Debug\net8.0\ref\SM.ApplicationContracts.dll

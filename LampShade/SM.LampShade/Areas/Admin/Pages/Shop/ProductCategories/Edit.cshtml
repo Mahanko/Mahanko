@@ -1,0 +1,138 @@
+﻿@page "{Id:long}"
+@model SM.LampShade.Areas.Admin.Pages.Shop.ProductCategories.EditModel
+@{
+}
+<div class="main-content">
+    <section class="section">
+        <div class="section-header">
+            <h1>گروه محصولات</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="#">Edit Product Category</a></div>
+            </div>
+        </div>
+
+        <div class="section-body">
+            <h2 class="section-title">ویرایش گروه محصول : @Model.EditCategory.Name</h2>
+            <p class="section-lead">با تکمیل کردن فرم زیر گروه خود را ویرایش کنید</p>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>گروه محصولات</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mt-4">
+                                <div class="col-12 col-lg-8 offset-lg-2">
+                                    <div class="wizard-steps">
+                                        <div class="wizard-step wizard-step-active">
+                                            <div class="wizard-step-icon">
+                                                <i class="far fa-user"></i>
+                                            </div>
+                                            <div class="wizard-step-label">
+                                                Edit Category
+                                            </div>
+                                        </div>
+                                        <!-- <div class="wizard-step wizard-step-danger">
+                                          <div class="wizard-step-icon">
+                                            <i class="fas fa-times"></i>
+                                          </div>
+                                          <div class="wizard-step-label">
+                                            Error
+                                          </div>
+                                        </div> -->
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <form class="wizard-content mt-2"  asp-page-handler="Edit" method="post">
+                                <div class="wizard-pane">
+                                    @* Name  *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" for="Name" name="Name">نام</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" id="Name" name="Name" class="form-control mb-1" value="@Model.EditCategory.Name">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="EditCategory.Name"></span>
+                                        </div>
+                                    </div>
+                                    @* picture *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" for="Picture" title="Picture">عکس</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" name="Picture" id="Picture" class="form-control" value="@Model.EditCategory.Picture">
+                                            <img src="@Model.EditCategory.Picture" width="70" height="50">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="EditCategory.Picture"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Alt *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" name="PictureAlt" for="PictureAlt">توضیح کوتاه عکس</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" name="PictureAlt" id="PictureAlt" class="form-control" value="@Model.EditCategory.PictureAlt">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="EditCategory.PictureAlt"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Picture Title *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" name="PictureTitle" for="PictureTitle">تایتل عکس </label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" name="PictureTitle" id="PictureTitle" class="form-control" value="@Model.EditCategory.PictureTitle">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="EditCategory.PictureTitle"></span>
+
+                                        </div>
+                                    </div>
+                                    @* KewWord *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" name="KeyWords" for="KeyWords">کلمات کلیدی </label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" name="KeyWords" id="KeyWords" class="form-control" value="@Model.EditCategory.KeyWords">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="EditCategory.KeyWords"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Meta Description *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" for="MetaDescription" name="MetaDescription">توضیحات متا</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <textarea type="text" name="MetaDescription" id="MetaDescription" class="form-control">@Model.EditCategory.MetaDescription</textarea>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="EditCategory.MetaDescription"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Description *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" name="Description" for="Description">توضیحات تکمیلی</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <textarea type="text" name="Description" id="Description" class="form-control mb-1">@Model.EditCategory.Description</textarea>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="EditCategory.Description"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Slug *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" for="Slug" name="Slug">Slug</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <textarea type="text" name="Slug" id="Slug" class="form-control">@Model.EditCategory.Slug</textarea>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="EditCategory.Slug"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-lg-4 col-md-6 text-right">
+                                            <button type="submit" class="btn btn-primary">ویرایش گروه</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

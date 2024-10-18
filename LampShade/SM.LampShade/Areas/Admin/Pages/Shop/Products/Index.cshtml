@@ -1,0 +1,130 @@
+﻿@page
+@model SM.LampShade.Areas.Admin.Pages.Shop.Products.IndexModel
+@{
+    ViewData["Title"] = "مدیریت محصولات";
+}
+<div class="main-content">
+    <section class="section">
+        <div class="section-header">
+            <h1>List Prouct Category</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item"><a asp-page="./Index">لیست محصولات</a></div>
+            </div>
+        </div>
+
+        <div class="section-body">
+            <h2 class="section-title">مشاهده لیست محصولات</h2>
+            <p class="section-lead">List Prouct's</p>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>لیست محصول ها</h4>
+                            <div class="card-header-action">
+
+                                <form method="get">
+                                    <div class="input-group">
+                                        <input type="submit" class="btn btn-primary" style="padding: 0 34px !important;"
+                                               value="Search" />
+                                        <Select class="form-control select2-dropdown text-center font-weight-bold shadow-sm w-25 p-2 ml-2"
+                                                style="border-radius: 10px 10px 10px 10px !important;height: 36px;" asp-for="SearchModel.CategoryId" asp-items="Model.ProductCategories">
+                                            <option value="0">گروه محصولات</option>
+                                        </Select>
+                                        <input type="text"
+                                               class="form-control shadow-sm text-center mr-2 ml-2 font-weight-bold border"
+                                               style="border-radius: 10px 10px 10px 10px !important;" asp-for="SearchModel.Name"
+                                               placeholder="نام محصول">
+                                        <input type="text"
+                                               class="form-control shadow-sm text-center mr-2 ml-2 font-weight-bold border"
+                                               style="border-radius: 10px 10px 10px 10px !important;" asp-for="SearchModel.Code"
+                                               placeholder="کد محصول">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-striped" id="sortable-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="border">ID</th>
+                                            <th class="border">عکس محصول</th>
+                                            <th class="border">نام محصول</th>
+                                            <th class="border">کد محصول</th>
+                                            <th class="border">گروه محصول</th>
+                                            <th class="border">قیمت محصول</th>
+                                            <th class="border">تاریخ ایجاد</th>
+                                            <th class="border">موجودی</th>
+                                            <th class="border">عملیات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.Products)
+                                        {
+                                            <tr>
+                                                <td class="border">
+                                                    @item.Id
+                                                </td>
+                                                <td class="border"><img src="@item.Picture" width="90" height="70" class="m-1"></td>
+                                                <td class="align-middle border">
+                                                    @item.Name
+                                                </td>
+                                                <td class="border">
+                                                    @item.Code
+                                                </td>
+                                                <td class="border">
+                                                    @item.Category
+                                                </td>
+                                                <td class="border">
+                                                    @item.UnitPrice تومان
+                                                </td>
+                                                <td class="border">
+                                                    @item.CreationDate
+                                                </td>
+                                                <td class="border">
+                                                    @if(item.IsInStock==true)
+                                                    {
+                                                        <i class="fa fa-check text-success fa-2x text-center"></i>
+                                                    }
+                                                    @if(item.IsInStock==false)
+                                                    {
+                                                        <i class="text-danger fa-2x text-center">X</i>
+
+                                                    }
+                                                </td>
+                                                <td class="border">
+                                                    @if (item.IsInStock==false)
+                                                    {
+                                                      
+                                                        <form asp-page-handler="InStock" method="post" class="btn">
+                                                            <button type="submit" class="btn btn-danger">اتمام موجودی</button>
+                                                            <input type="hidden" name="Id" value="@item.Id" />
+                                                        </form>
+                                                    }
+                                                    else if(item.IsInStock==true)
+                                                    {
+                                                        <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-primary">ویرایش</a>
+                                                        <form asp-page-handler="NotInStock" method="post" class="btn">
+                                                            <button type="submit" class="btn btn-success">موجود است</button>
+                                                            <input type="hidden" name="Id" value="@item.Id" />
+                                                        </form>
+                                                    } 
+                                                </td>
+                                            </tr>
+                                        }
+
+                                    </tbody>
+                                    <a asp-page="./Index" class="btn btn-round btn-primary float-right mb-2 mr-5">مشاهده همه  </a>
+                                    <a asp-page="./Create" class="btn btn-warning btn-round float-right mr-4">ایجاد محصول جدید</a>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

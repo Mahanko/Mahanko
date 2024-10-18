@@ -1,0 +1,173 @@
+﻿@page
+@model SM.LampShade.Areas.Admin.Pages.Shop.Products.CreateModel
+@{
+}
+<div class="main-content">
+    <section class="section">
+        <div class="section-header">
+            <h1>محصولات</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="#">Create New Products</a></div>
+            </div>
+        </div>
+
+        <div class="section-body">
+            <h2 class="section-title">ساخت محصول جدید</h2>
+            <p class="section-lead">با تکمیل کردن فرم زیر محصول خود را بسازید</p>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>محصولات</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mt-4">
+                                <div class="col-12 col-lg-8 offset-lg-2">
+                                    <div class="wizard-steps">
+                                        <div class="wizard-step wizard-step-active">
+                                            <div class="wizard-step-icon">
+                                                <i class="far fa-user"></i>
+                                            </div>
+                                            <div class="wizard-step-label">
+                                                Create Category
+                                            </div>
+                                        </div>
+                                        <div class="wizard-step wizard-step-danger">
+                                            <div class="wizard-step-icon">
+                                                <i class="fas fa-times"></i>
+                                            </div>
+                                            <div class="wizard-step-label">
+                                                نکته: تمامی فیلد ها نمیتوانند خالی باشند
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <form class="wizard-content mt-2" method="post">
+                                <div class="wizard-pane">
+                                    @* Name  *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Name">نام</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.Name" class="form-control mb-1">
+                                            <span asp-validation-for="@Model.command.Name" class="text-danger p-2 m-auto float-right mr-5 w-100 text-center"></span>
+                                        </div>
+                                    </div>
+                                    @* picture *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Picture">عکس</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.Picture" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.Picture"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Alt *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.PictureAlt">توضیح کوتاه عکس</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.PictureAlt" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.PictureAlt"></span>
+                                        </div>
+                                    </div>
+                                    @* Picture Title *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.PictureTitle">تایتل عکس </label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.PictureTitle" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.PictureTitle"></span>
+
+                                        </div>
+                                    </div>
+                                    @* UnitPrice *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.UnitPrice">قیمت واحد</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.UnitPrice" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.UnitPrice"></span>
+
+                                        </div>
+                                    </div>
+                                    @* CategoryId *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.CategoryId">گروه محصول</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <select type="text" asp-for="@Model.command.CategoryId" asp-items="@Model.ProductCategories" class="form-control select2-dropdown text-center">
+                                                <option value="0">گروه محصول</option>
+                                            </select>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.CategoryId"></span>
+
+                                        </div>
+                                    </div>
+                                    @*Short Description *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.ShortDescription">توضیحات کوتاه</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <textarea asp-for="@Model.command.ShortDescription" class="form-control mb-1"></textarea>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.ShortDescription"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Description *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Description">توضیحات</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <textarea asp-for="@Model.command.Description" class="form-control"></textarea>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.Description"></span>
+
+                                        </div>
+                                    </div>
+                                    @* KewWord *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.KeyWords">کلمات کلیدی </label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.KeyWords" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.KeyWords"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Meta Description *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.MetaDescription">توضیحات متا</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <textarea asp-for="@Model.command.MetaDescription" class="form-control"></textarea>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.MetaDescription"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Slug *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Slug">Slug</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <textarea asp-for="@Model.command.Slug" class="form-control"></textarea>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.Slug"></span>
+                                        </div>
+                                    </div>
+
+                                    @* code *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Code">Code</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <textarea type="text" asp-for="@Model.command.Code" class="form-control"></textarea>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.Code"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-lg-4 col-md-6 text-right">
+                                            <button type="submit" class="btn btn-primary">ایجاد محصول</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

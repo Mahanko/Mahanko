@@ -1,0 +1,95 @@
+﻿@page
+@model SM.LampShade.Areas.Admin.Pages.Shop.ProductCategories.IndexModel
+@{
+    ViewData["Title"] = "گروه محصولی";
+}
+<div class="main-content">
+    <section class="section">
+        <div class="section-header">
+            <h1>List Prouct Category</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item"><a asp-page="./Index">لیست گروه محصولی</a></div>
+            </div>
+        </div>
+
+        <div class="section-body">
+            <h2 class="section-title">مشاهده لیست گروه محصولی</h2>
+            <p class="section-lead">List Prouct Category</p>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>لیست گروه ها</h4>
+                            <div class="card-header-action">
+
+                                <form method="get">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control shadow-sm" asp-for="SearchModel.name" placeholder="جست و جو">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-striped" id="sortable-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="border">ID</th>
+                                            <th class="border">عکس گروه محصولی</th>
+                                            <th class="border">نام گروه محصولی</th>
+                                            <th class="border">تاریخ ایجاد</th>
+                                            <th class="border">عملیات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach(var item in Model.ProductCategories)
+                                        {
+                                            <tr>
+                                                <td class="border">
+                                                    @item.Id
+                                                </td>
+                                                <td class="border"><img src="@item.Picture" width="90" height="70" alt="" class="m-1"></td>
+                                                <td class="align-middle border">
+                                                    @item.Name
+                                                </td>
+                                                <td class="border">
+                                                    @item.CreationDate
+                                                </td>
+                                                <td class="border">  
+                                                    @if (item.IsDeleted == false)
+                                                    {
+                                                        <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-primary">ویرایش</a>
+                                                        <form asp-page-handler="Delete" method="post" class="btn">
+                                                            <button type="submit" class="btn btn-danger">حذف</button>
+                                                            <input type="hidden" name="Id" value="@item.Id" />
+                                                        </form>
+                                                    }
+                                                    else
+                                                    {
+                                                        <form asp-page-handler="Restore" method="post" class="btn">
+                                                            <button type="submit" class="btn btn-warning">بازنشانی</button>
+                                                            <input type="hidden" name="Id" value="@item.Id" />
+                                                        </form>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+
+                                    </tbody>
+                                    <a asp-page="./Index" class="btn btn-round btn-primary float-right mb-2 mr-5">مشاهده همه  </a>
+                                    <a asp-page="./Create" class="btn btn-warning btn-round float-right mr-4">ایجاد گروه محصولات</a>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

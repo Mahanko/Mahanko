@@ -1,0 +1,6 @@
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\ShopQuery\obj\Debug\net8.0\ShopQuery.csproj.AssemblyReference.cache
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\ShopQuery\obj\Debug\net8.0\ShopQuery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\ShopQuery\obj\Debug\net8.0\ShopQuery.AssemblyInfoInputs.cache
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\ShopQuery\obj\Debug\net8.0\ShopQuery.AssemblyInfo.cs
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\ShopQuery\obj\Debug\net8.0\ShopQuery.csproj.CoreCompileInputs.cache
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\ShopQuery\obj\Debug\net8.0\ShopQuery.sourcelink.json

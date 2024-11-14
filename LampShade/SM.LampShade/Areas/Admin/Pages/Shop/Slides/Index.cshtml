@@ -1,0 +1,99 @@
+﻿@page
+@model SM.LampShade.Areas.Admin.Pages.Shop.Slides.IndexModel
+@{
+    ViewData["Title"] = "مدیریت اسلایدر ";
+}
+<div class="main-content">
+    <section class="section">
+        <div class="section-header">
+            <h1>List Prouct Category</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item"><a asp-page="./Index">اسلایدر</a></div>
+            </div>
+        </div>
+
+        <div class="section-body">
+            <h2 class="section-title">مشاهده لیست عکس اسلایدر</h2>
+            <p class="section-lead">List Slider's</p>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>لیست عکس اسلایدر</h4>
+                            <div class="card-header-action">
+
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="table-responsive">
+                                <table class="table table-striped" id="sortable-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="border">ID</th>
+                                            <th class="border">عکس اسلایدر</th>
+                                            <th class="border">سرتیتر</th>
+                                            <th class="border">عنوان</th>
+                                            <th class="border">وضعیت</th>
+                                            <th class="border">عملیات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.Slides)
+                                        {
+                                            <tr>
+                                                <td class="border">
+                                                    @item.Id
+                                                </td>
+                                                <td class="border"><img src="@item.Picture" width="90" height="70" class="m-1"></td>
+                                                <td class="align-middle border">
+                                                    @item.Heading
+                                                </td>
+                                                <td class="border">
+                                                    @item.Title
+                                                </td>
+                                                <td class="border">
+                                                    @if (item.IsDeleted == false)
+                                                    {
+                                                        <i class="fa fa-check text-success fa-2x text-center"></i>
+                                                    }
+                                                    @if(item.IsDeleted==true)
+                                                    {
+                                                        <i class="text-danger fa-2x text-center">X</i>
+
+                                                    }
+                                                </td>
+                                                <td class="border">
+                                                    @if (item.IsDeleted == true)
+                                                    {
+                                                      
+                                                        <form asp-page-handler="Restore" method="post" class="btn">
+                                                            <button type="submit" class="btn btn-warning">بازنشانی</button>
+                                                            <input type="hidden" name="Id" value="@item.Id" />
+                                                        </form>
+                                                    }
+                                                    else if (item.IsDeleted == false)
+                                                    {
+                                                        <a asp-page="./Edit" asp-route-id="@item.Id" class="btn btn-primary">ویرایش</a>
+                                                        <form asp-page-handler="Remove" method="post" class="btn">
+                                                            <button type="submit" class="btn btn-danger">حذف</button>
+                                                            <input type="hidden" name="Id" value="@item.Id" />
+                                                        </form>
+                                                    } 
+                                                </td>
+                                            </tr>
+                                        }
+
+                                    </tbody>
+                                    <a asp-page="./Index" class="btn btn-round btn-primary float-right mb-2 mr-5">مشاهده همه  </a>
+                                    <a asp-page="./Create" class="btn btn-warning btn-round float-right mr-4">ایجاد محصول جدید</a>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

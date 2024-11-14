@@ -2,6 +2,7 @@
 using SM.Domain.ProductAgg;
 using SM.Domain.ProductCategoryAgg;
 using SM.Domain.ProductPictureAgg;
+using SM.Domain.SlideAgg;
 using SM.Infrastructure.EFCore.Mapping;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace SM.Infrastructure.EFCore
     {
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<ProductPicture> ProductPictures { get; set; }
+        public DbSet<Slide> Slides { get; set; }
         public DbSet<Product> Products { get; set; }
         public ShopContext(DbContextOptions<ShopContext> options):base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

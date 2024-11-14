@@ -18,6 +18,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.LampShade
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Discounts/ColleagueDiscounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXENvbGxlYWd1ZURpc2NvdW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Discounts/ColleagueDiscounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXENvbGxlYWd1ZURpc2NvdW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Discounts/ColleagueDiscounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXENvbGxlYWd1ZURpc2NvdW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Discounts/CustomerDiscount/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXEN1c3RvbWVyRGlzY291bnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Discounts/CustomerDiscount/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXEN1c3RvbWVyRGlzY291bnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Discounts/CustomerDiscount/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcRGlzY291bnRzXEN1c3RvbWVyRGlzY291bnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,6 +86,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hvcFxQcm9kdWN0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Shop/Slides/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hvcFxTbGlkZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Shop/Slides/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hvcFxTbGlkZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/Shop/Slides/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2hvcFxTbGlkZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Areas/Admin/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,6 +116,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Pages/Shared/Components/ProductCategory/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcUHJvZHVjdENhdGVnb3J5XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Pages/Shared/Components/Slide/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcU2xpZGVcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Natan/Desktop/Mahanko/Code/LampShade/SM.LampShade/Pages/Shared/_ValidationScriptsPartial.cshtml]

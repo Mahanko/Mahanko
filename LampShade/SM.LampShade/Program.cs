@@ -1,11 +1,17 @@
 using SM.Infrastructure.EFCore.Extentions;
 using SM.Application.Extentions;
+using _01_LampShadeQuery.Extentions;
+using DiscountManagement.Infrastructure.Coniguration;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddInfrastructureConfiguration(builder.Configuration);
 builder.Services.AddApplicationDependencies();
+builder.Services.AddQueryConfigration();
+
+DiscountManagement.Infrastructure.Coniguration.DiscountManagement.Configure(builder.Services, builder.Configuration);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

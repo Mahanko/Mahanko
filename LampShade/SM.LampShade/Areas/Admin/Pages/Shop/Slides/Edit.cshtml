@@ -1,0 +1,132 @@
+﻿@page "{Id:long}"
+@model SM.LampShade.Areas.Admin.Pages.Shop.Slides.EditModel
+@{
+}
+<div class="main-content">
+    <section class="section">
+        <div class="section-header">
+            <h1> محصولات</h1>
+            <div class="section-header-breadcrumb">
+                <div class="breadcrumb-item active"><a href="#">Edit Slider</a></div>
+            </div>
+        </div>
+
+        <div class="section-body">
+            <h2 class="section-title">ویرایش اسلایدر : @Model.command.Title</h2>
+            <p class="section-lead">با تکمیل کردن فرم زیر اسلایدر خود را ویرایش کنید</p>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>اسلایدر</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mt-4">
+                                <div class="col-12 col-lg-8 offset-lg-2">
+                                    <div class="wizard-steps">
+                                        <div class="wizard-step wizard-step-active">
+                                            <div class="wizard-step-icon">
+                                                <i class="far fa-user"></i>
+                                            </div>
+                                            <div class="wizard-step-label">
+                                                Edit Slider
+                                            </div>
+                                        </div>
+                                         <div class="wizard-step wizard-step-danger">
+                                          <div class="wizard-step-icon">
+                                            <i class="fas fa-times"></i>
+                                          </div>
+                                          <div class="wizard-step-label">
+                                            نکته: فیلد ها نباید خالی باشند
+                                          </div>
+                                        </div> 
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <form class="wizard-content mt-2" method="post">
+                                <input type="hidden" asp-for="command.Id" />
+                                <div class="wizard-pane">
+                                    @* picture *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Picture">عکس</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.Picture" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.Picture"></span>
+
+                                        </div>
+                                    </div>
+                                    @* PictureTitle *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.PictureTittle">تایتل عکس</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.PictureTittle" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.PictureTittle"></span>
+
+                                        </div>
+                                    </div>
+                                    @* Alt *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.PictureAlt">توضیح کوتاه عکس</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.PictureAlt" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.PictureAlt"></span>
+                                        </div>
+                                    </div>
+                                    @* Link  *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Link">لینک</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.Link" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.Link"></span>
+                                        </div>
+                                    </div>
+                                    @* Title  *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Title">عنوان</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.Title" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.Title"></span>
+                                        </div>
+                                    </div>
+                                    @* Heading *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Heading">سرتیتر</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.Heading" class="form-control">
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.Heading"></span>
+                                        </div>
+                                    </div>
+                                    @* Text *@
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.Text">متن اصلی</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <textarea asp-for="@Model.command.Text" class="form-control"></textarea>
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.Text"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4 text-md-right text-left" asp-for="@Model.command.BtnText">متن دکمه</label>
+                                        <div class="col-lg-4 col-md-6">
+                                            <input type="text" asp-for="@Model.command.BtnText" class="form-control" />
+                                            <span class="text-danger p-2 m-auto float-right mr-5 w-100 text-center" asp-validation-for="@Model.command.BtnText"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-lg-4 col-md-6 text-right">
+                                            <button type="submit" class="btn btn-primary">ویرایش اسلایدر</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

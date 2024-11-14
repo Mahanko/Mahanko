@@ -2,8 +2,10 @@ C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\SM
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\SM.Application.dll
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\SM.Application.pdb
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\0-Framework.dll
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\DiscountManagement.Application.Contracts.dll
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\SM.ApplicationContracts.dll
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\SM.Domain.dll
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\DiscountManagement.Application.Contracts.pdb
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\SM.ApplicationContracts.pdb
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\SM.Domain.pdb
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Application\bin\Debug\net8.0\0-Framework.pdb

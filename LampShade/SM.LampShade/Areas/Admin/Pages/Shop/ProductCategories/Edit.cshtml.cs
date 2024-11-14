@@ -19,10 +19,14 @@ namespace SM.LampShade.Areas.Admin.Pages.Shop.ProductCategories
         {
             EditCategory = _productCategoryApplication.GetDetails(id);
         }
-        public RedirectToPageResult OnPostEdit()
+        public IActionResult OnPostEdit()
         {
-            _productCategoryApplication.Edit(EditCategory);
-            return RedirectToPage("./Index");
+            if (EditCategory != null)
+            {
+                _productCategoryApplication.Edit(EditCategory);
+                return RedirectToPage("./Index");
+            }
+            return Page();
         }
     }
 }

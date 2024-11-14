@@ -3,10 +3,14 @@ C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\SM.Infrastructure.EFCore.dll
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\SM.Infrastructure.EFCore.pdb
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\0-Framework.dll
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\DiscountManagement.Application.Contracts.dll
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\DiscountManagement.Domain.dll
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\SM.ApplicationContracts.dll
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\SM.Domain.dll
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\DiscountManagement.Domain.pdb
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\SM.Domain.pdb
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\0-Framework.pdb
+C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\DiscountManagement.Application.Contracts.pdb
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\bin\Debug\net8.0\SM.ApplicationContracts.pdb
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\obj\Debug\net8.0\SM.Infrastructure.EFCore.csproj.AssemblyReference.cache
 C:\Users\Natan\Desktop\Mahanko\Code\LampShade\SM.Infrastructure\obj\Debug\net8.0\SM.Infrastructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig
